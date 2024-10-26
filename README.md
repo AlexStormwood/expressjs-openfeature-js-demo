@@ -2,7 +2,7 @@
 
 Demo of OpenFeature usage in an ExpressJS server, in plain JavaScript.
 
-At the time of writing (26th October 2024), OpenFeature's tutorials really push for developers to use some complex cloud-hosted flag provider service. That's an insane way to try to introduce people to something. 
+At the time of writing (26th October 2024), OpenFeature's tutorials really push for developers to use some complex cloud-hosted or Docker-managed flag provider service. That's an insane way to try to introduce people to something. Introductory tutorials can't assume knowledge like that! 
 
 So, this repo shows one of the simpler ways to use OpenFeature: load up some JSON and parse it. 
 
