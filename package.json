@@ -1,0 +1,24 @@
+{
+  "name": "expressjs-openfeature-js-demo",
+  "version": "1.0.0",
+  "description": "Demo of OpenFeature usage in an ExpressJS server, in plain JavaScript.",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Alex Stormwood",
+    "email": "alex@bigfootds.com",
+    "url": "https://github.com/AlexStormwood"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@openfeature/server-sdk": "^1.15.1",
+    "express": "^4.21.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  }
+}
