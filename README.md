@@ -2,6 +2,10 @@
 
 Demo of OpenFeature usage in an ExpressJS server, in plain JavaScript.
 
+At the time of writing (26th October 2024), OpenFeature's tutorials really push for developers to use some complex cloud-hosted flag provider service. That's an insane way to try to introduce people to something. 
+
+So, this repo shows one of the simpler ways to use OpenFeature: load up some JSON and parse it. 
+
 Server process flow:
 
 1. Request comes in.
@@ -13,9 +17,20 @@ Server process flow:
 5. Middleware chain proceeds along until a route's callback is reached.
 6. Route callbacks use the checked flags in conditional logic.
 
-OpenFeature's tutorials really push for developers to use some complex cloud-hosted flag provider service. That's an insane way to try to introduce people to something. 
 
-So, this repo shows the simplest way to use OpenFeature: load up some JSON and parse it.
+
+## Demo Usage
+
+To see how this feature flag stuff impacts the server functionality, clone the repo and follow these steps:
+
+1. Install project dependencies with `npm install`
+2. Run the server in hot-reload mode with `npm run dev`
+3. Visit `localhost:8080` in your web browser.
+4. Open up the `flags.json` file in the root of this repo.
+5. Modify the `"defaultVariant": "off"` line so that `off` is replaced with `on`.
+6. Refresh the server page in the web browser. The `npm run dev` step should've made the server hot-reload on a change to that flag file, so the response in the browser will be different!
+
+## Next Steps
 
 Next steps could go in various directions:
 
